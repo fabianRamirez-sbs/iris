@@ -9,7 +9,7 @@ export class TodoListService {
   todoList: TodoList[] = [
     {
       id: 1,
-      title: 'Hola',
+      title: 'Hello World.',
     },
   ];
 

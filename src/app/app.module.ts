@@ -6,9 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home/home.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NavBarComponent],
+  declarations: [AppComponent, HomeComponent, NavBarComponent, TodoListComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
