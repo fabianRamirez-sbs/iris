@@ -17,6 +17,7 @@ export class TodoListService {
     return this.todoList;
   }
   getItemList(title: string) {
+    console.log(this.todoList.find((item) => title === item.title));
     return this.todoList.find((item) => title === item.title);
   }
   deleteItemList(idDelete: number) {

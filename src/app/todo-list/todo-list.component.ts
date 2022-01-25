@@ -10,12 +10,22 @@ import { TodoList } from '../core/models/todo-list';
 export class TodoListComponent implements OnInit {
   constructor(private todoListService: TodoListService) {}
 
+  Searchitem: string = "Hello World.";
   list: TodoList[] = [];
+  searchItems:any = {};
 
   ngOnInit(): void {
     this.fetchProducts();
   }
   fetchProducts() {
     this.list = this.todoListService.getTodoList();
+  }
+
+  searchItem() {
+     if (this.Searchitem.length > 0) {
+       this.searchItems = this.todoListService.getItemList(this.Searchitem);
+     } else {
+       alert('No results');
+     }
   }
 }
