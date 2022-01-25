@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TodoListService } from './../../core/services/todo-list.service';
-import { TodoList } from '../../core/models/todo-list';
+import { TodoListService } from './../core/services/todo-list.service';
+import { TodoList } from './../core/models/todo-list';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
