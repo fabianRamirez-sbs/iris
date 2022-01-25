@@ -27,7 +27,7 @@ export class TodoListService {
   }
   postTodoList(data: string) {
     const newData = {
-      id: new Date().getMinutes(),
+      id: new Date().getSeconds(),
       title: data,
     };
     this.todoList.push(newData);
